@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function getcube(){  
+var number=document.getElementById("number").value; 
+var res = number*number*number
+alert(res);  
+
+document.getElementById("myh1").innerText = res
+
+var d = document.getElementsByTagName("h1")
+alert(d.length)
+
+}  
+</script>  
+<form>  
+Enter No:<input type="text" id="number" name="number"/><br/>  
+<input type="button" value="cube" onclick="getcube()"/>  
+</form> 
+<h1 id="myh1" ></h1> 
+<h1>test </h1>
+    </script>
+    
+</body>
+</html>
